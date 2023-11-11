@@ -1,1 +1,19 @@
-<p>opportunity works!</p>
+<div class="opportunity">
+  <div class="opportunity--container">
+    <div class="opportunity--header">
+      <h1>{{'opportunity-title-message' | translate}}</h1>
+      <div class="type--container">
+        <app-checkbox [selectedType]="selectedType"
+                      *ngFor="let type of opportunityTypes"
+                      [type]="type"
+                      (click)="selectedType = type"></app-checkbox>
+      </div>
+    </div>
+    <div class="opportunity--content">
+      <div class="card--container">
+        <app-card *ngFor="let tab of opportunityTabs"
+                  [tab]="tab"></app-card>
+      </div>
+    </div>
+  </div>
+</div>

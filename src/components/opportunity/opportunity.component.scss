@@ -1,0 +1,57 @@
+.type {
+  &--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.opportunity {
+  padding: 20px 0 ;
+  &--container {
+    width: calc(100% - 24px);
+    height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14px;
+    margin: auto;
+    overflow: auto;
+  }
+  &--header {
+    h1 {
+      font-family: var(--main-font);
+      font-size: 26.25px;
+      font-style: normal;
+      font-weight: 700;
+      padding: 32px 0 42px 0;
+    }
+  }
+  &--content {
+    width: 100%;
+    margin-top: 63px;
+    display: flex;
+    justify-content: center;
+    height: -webkit-fill-available;
+    .card {
+      &--container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+      }
+    }
+  }
+}
+app-checkbox, app-card {
+  display: contents;
+}
+@media screen and (max-width: 1173px) {
+  .card {
+    &--container {
+      flex-wrap: wrap;
+    }
+  }
+}

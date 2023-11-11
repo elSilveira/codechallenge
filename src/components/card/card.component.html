@@ -1,1 +1,22 @@
-<p>card works!</p>
+<div class="card"
+     style.background-color="var({{tab.color}}-Lighter)">
+  <div class="card--title">
+    <h5 style.color="var({{tab.color}}-Darker)">
+      {{tab.title}}
+    </h5>
+    <div class="card--selector">
+      <label class="switch"
+             style.background-color="var({{tab.color}}-Light)">
+        <input type="checkbox">
+        <span class="slider round"
+              style.background-color="var({{tab.color}})"></span>
+      </label>
+    </div>
+  </div>
+  <div class="card--content">
+    <div class="card--pannel"
+         style.border="{{'1px solid var(' + tab.color+ '-Light)'}}"></div>
+  </div>
+  <div class="card--gradient">
+  </div>
+</div>

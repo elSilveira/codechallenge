@@ -1,7 +1,16 @@
 <div class="main">
   <div class="main--container">
     <div class="main--head">
+      <div class="icon">
+        <img src="../assets/images/logo.svg">
+      </div>
       <app-settings-selector></app-settings-selector>
+      <div class="next">
+        <div class="next--btn"
+             (click)="changeSelection()">
+          <label>{{(selected == 1 ? 'next' : 'back') | translate}}</label>
+        </div>
+      </div>
     </div>
     <div class="main--body">
       <router-outlet></router-outlet>

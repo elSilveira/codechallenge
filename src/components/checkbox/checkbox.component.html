@@ -1,1 +1,7 @@
-<p>checkbox works!</p>
+<div class="type"
+     [class.selected]="selectedType == type"
+     (click)="selectedType = type">
+  <input type="checkbox"
+         [checked]="selectedType == type">
+  <label>{{type}}</label>
+</div>
