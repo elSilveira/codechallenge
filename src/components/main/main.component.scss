@@ -1,0 +1,11 @@
+.main {
+  &--head {
+    display: flex;
+    background-color: rgb(216, 225, 225);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

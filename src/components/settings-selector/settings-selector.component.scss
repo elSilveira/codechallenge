@@ -1,0 +1,30 @@
+.selector {
+  &--content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  &--btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &--number {
+    label {
+      cursor: pointer;
+    }
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: solid 1px rgb(161, 161, 161);
+    text-align: center;
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 16px;
+  }
+  &--number:not(.selected) {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+}

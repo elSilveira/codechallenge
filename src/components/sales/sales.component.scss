@@ -1,0 +1,85 @@
+.type {
+  position: relative;
+  &--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="checkbox" i] {
+    border-radius: 10px;
+  }
+  border: solid 1px rgb(233, 233, 233);
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  max-width: 150px;
+  gap: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  label {
+    cursor: pointer;
+  }
+  &.selected {
+    border: solid 1px blue;
+    ::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -20px;
+      left: 81px;
+      width: 0px;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom-color: #0003ff;
+      transform: translate(50%, 0);
+      transform: rotate(180deg);
+    }
+    ::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 81px;
+      bottom: -18px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom-color: white;
+      transform: rotate(180deg);
+    }
+  }
+}
+.sales {
+  &--container {
+    width: 100%;
+  }
+  &--content {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    .card {
+      max-width: 180px;
+      padding: 10px;
+      border-radius: 15px;
+      width: calc(100% / 6);
+
+      &--container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      &--pannel {
+        width: -webkit-fill-available;
+        border-radius: 25px;
+        border: solid;
+        height: 180px;
+        margin-top: 12px;
+        margin-bottom: 200px;
+      }
+    }
+  }
+}

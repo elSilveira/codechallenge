@@ -1,0 +1,40 @@
+<div class="sales">
+  <div class="sales--container">
+    <div class="sales--header">
+      <h1>Please select the type of sales pipeline that best fits to you company</h1>
+      <div class="type--container">
+        <div class="type"
+             [class.selected]="selectedType == type"
+             (click)="selectedType = type"
+             *ngFor="let type of salesTypes">
+          <input type="checkbox"
+                 [checked]="selectedType == type">
+          <label>{{type}}</label>
+        </div>
+      </div>
+    </div>
+    <div class="sales--content">
+      <div class="card--container">
+        <div class="card"
+             [style.background-color]="tab.color"
+             *ngFor="let tab of salesTabs">
+          <div class="card--title">
+            <h5>
+              {{tab.title}}
+            </h5>
+            <div class="card--selector">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="card--content">
+            <div class="card--pannel"
+                 style.border="{{'1px solid ' + tab.border}}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
