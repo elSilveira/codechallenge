@@ -10,5 +10,9 @@ export const translations = new Map<string, string>([
   ['submited', 'SUBMITTED'],
   ['won', 'WON'],
   ['lost', 'LOST'],
-  ['closed', 'CLOSED']
+  ['closed', 'CLOSED'],
+  ['next', 'Next'],
+  ['back', 'Back'],
+  ['sales-title-message', 'Please select the type of sales pipeline that best fits to you company'],
+  ['opportunity-title-message', 'Please select the type of opportunities that best fits to you company']
 ]);

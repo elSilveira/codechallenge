@@ -9,43 +9,37 @@ export const salesTabs = new Set([
   {
     title: 'LEAD',
     selected: false,
-    color: 'purple',
-    border: 'orange',
+    color: '--S-1',
     data: new Set()
   },
   {
     title: 'RFP IN PROGRESS',
     selected: false,
-    color: 'orange',
-    border: 'purple',
+    color: '--S-2',
     data: new Set()
   },
   {
     title: 'SUBMITED',
     selected: false,
-    color: 'blue',
-    border: 'purple',
+    color: '--S-3',
     data: new Set()
   },
   {
     title: 'WON',
     selected: false,
-    color: 'green',
-    border: 'purple',
+    color: '--S-4',
     data: new Set()
   },
   {
     title: 'LOST',
     selected: false,
-    color: 'red',
-    border: 'purple',
+    color: '--S-5',
     data: new Set()
   },
   {
     title: 'CLOSED',
     selected: false,
-    color: 'gray',
-    border: 'purple',
+    color: '--S-6',
     data: new Set()
   }
 ])

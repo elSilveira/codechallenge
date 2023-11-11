@@ -14,7 +14,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     ComponentsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

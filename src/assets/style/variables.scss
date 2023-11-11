@@ -1,1 +1,37 @@
-$font-family: "arial";
+:root {
+  --main-font-narrow: 'Archivo Narrow', sans-serif;
+  --main-font: 'Archivo', sans-serif;
+  --White: #FFF;
+  --Blue-highlight: #2462D1;
+  --Blue-Darker: #062952;
+  --Blue-Lighter: #bfcfe0;
+  --Gray-200: #EDF2F7;
+  --Gray-300: #E2E8F0;
+  --Gray-400: #CBD5E0;
+  --Gray-800: #2D3748;
+  --S-1: #DABFFF;
+  --S-1-Darker: #46426D;
+  --S-1-Light: #E9D9FF;
+  --S-1-Lighter: #F7F1FF;
+  --S-2: #FFD6B3;
+  --S-2-Darker: #66421F;
+  --S-2-Light: #FFE4CC;
+  --S-2-Lighter: #FEF6EF;
+  --S-3: #99D1FF;
+  --S-3-Darker: #003A66;
+  --S-3-Light: #BFE3FF;
+  --S-3-Lighter: #E6F4FF;
+  --S-4: #81DDE5;
+  --S-4-Darker: #2A5154;
+  --S-4-Light: #AAECF2;
+  --S-4-Lighter: #DEF5F7;
+  --S-5: #FFBFD2;
+  --S-5-Darker: #773A47;
+  --S-5-Light: #FFD9E4;
+  --S-5-Lighter: #FFF2F6;
+  --S-6: #CBD5E0;
+  --S-6-Darker: #4A5568;
+  --S-6-Light: #E2E8F0;
+  --S-6-Lighter: #F2F7FA;
+  
+}
